@@ -35,12 +35,14 @@ public class DeadLetterSample {
                 String message = new String(body, "UTF-8");
                 System.out.println(" [x] Received '" + message + "'");
 
-//                channel.basicReject(envelope.getDeliveryTag(), false);
+                // requeue=false
                 channel.basicNack(envelope.getDeliveryTag(), true, false);
+//                channel.basicReject(envelope.getDeliveryTag(), false);
                 System.out.println("    Message is rejected: " + message);
             }
         };
 
+        // auto ack=false
         channel.basicConsume("q1", false, consumer);
         channel.basicPublish("", "q1", null, "AA".getBytes());
     }

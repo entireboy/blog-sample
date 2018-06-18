@@ -16,6 +16,7 @@ public class SimpleListener {
         System.out.println(" [x] Received '" + new String(message.getBody()) + "'");
         printHeaders(message.getMessageProperties());
 
+        // message reject
         throw new AmqpRejectAndDontRequeueException("ABCD");
     }
 

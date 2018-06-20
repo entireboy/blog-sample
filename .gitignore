@@ -5,4 +5,5 @@ atlassian-ide-plugin.xml
 build/
 classes/
 target/
+out/
 node_modules/

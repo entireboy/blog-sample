@@ -18,6 +18,7 @@ public class SimplePublisher {
 
     @PostConstruct
     private void configPublisherConfirm() {
+        // publisher confirm callback
         template.setConfirmCallback((correlationData, ack, cause) -> {
             if(ack) {
                 System.out.println("ACK");

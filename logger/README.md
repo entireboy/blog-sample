@@ -2,7 +2,7 @@
 
 ## Marker and filter
 
-slf4j logger marker filter sample
+slf4j logger [marker filter](http://blog.leocat.kr/notes/2018/06/29/java-filtering-log-with-marker) sample
 
 ### run
 

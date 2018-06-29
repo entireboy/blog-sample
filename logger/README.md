@@ -11,9 +11,9 @@ $ # run sample main class: kr.leocat.test.sample.logger.MarkerFilterSample with 
 $ ./gradlew run
 
 > Task :run 
-17:46:14.812 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - ABCD
-17:46:14.815 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - EFGH
-17:46:14.815 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - IJKL
+17:46:14.812 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - [] ABCD
+17:46:14.815 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - [MESSAGE] EFGH
+17:46:14.815 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - [] IJKL
 
 
 BUILD SUCCESSFUL in 1s
@@ -26,8 +26,8 @@ $ # run with logback.xml
 $ ./gradlew run
 
 > Task :run 
-17:46:19.463 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - ABCD
-17:46:19.465 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - IJKL
+17:46:19.463 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - [] ABCD
+17:46:19.465 [main] DEBUG k.l.t.s.logger.MarkerFilterSample - [] IJKL
 
 
 BUILD SUCCESSFUL in 1s

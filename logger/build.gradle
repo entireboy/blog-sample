@@ -1,12 +1,15 @@
 plugins {
     id 'groovy'
     id 'java'
+    id 'application'
 }
 
 group 'kr.leocat.test.sample'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+
+mainClassName = 'kr.leocat.test.sample.logger.MarkerFilterSample'
 
 def slf4jVersion = '1.7.25'
 def logbackVersion = '1.2.3'

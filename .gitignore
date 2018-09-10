@@ -7,3 +7,5 @@ classes/
 target/
 out/
 node_modules/
+
+ansible/**/*.retry

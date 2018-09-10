@@ -1,0 +1,13 @@
+- hosts: webserver
+  remote_user: deploy
+  become: yes
+#  sudo: yes
+  tasks:
+  - name: check file
+    local_action: stat path={{ MY_FILE_PATH }}
+    register: myfile_for_copy
+  - name: copy files if exist
+    copy:
+      src: "{{ MY_FILE_PATH }}"
+      dest: "{{ SOMEWHERE_TO_COPY }}"
+    when: myfile_for_copy.stat.exists == true

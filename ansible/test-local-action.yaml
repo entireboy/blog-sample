@@ -6,6 +6,8 @@
   - name: check file
     local_action: stat path={{ MY_FILE_PATH }}
     register: myfile_for_copy
+#    become: no
+#    sudo: no
   - name: copy files if exist
     copy:
       src: "{{ MY_FILE_PATH }}"

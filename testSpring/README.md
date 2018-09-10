@@ -1,6 +1,6 @@
 # Spring framework sample
 
-1. [AOP] Ordering Aspect - sample of [[Spring] advice 순서 변경하기](http://blog.leocat.kr/post/142117390222)
+1. [AOP] Ordering Aspect - sample of [[Spring] advice 순서 변경하기](http://blog.leocat.kr/notes/2016/04/02/spring-change-advice-order)
 
 > Run `test` to run ordering test
 > ```shell
